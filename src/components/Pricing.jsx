@@ -109,9 +109,9 @@ export function Pricing() {
       aria-label="Pricing"
       className="bg-slate-900 "
     >
-      <div className={`bg-blue-600 flex w-full h-[50px]`}>
-        <div onClick={() => toggle_tab(1)} className={`${toggle === 1 ? 'bg-blue-600 text-white': 'box_slide bg-slate-900 text-slate-400'} cursor-pointer flex-1 flex items-center justify-center`}><h2 className="font-display text-3xl tracking-tight sm:text-4xl transition duration-1000 ease-in-out">Implementations</h2></div>
-        <div onClick={() => toggle_tab(2)} className={`${toggle === 2 ? 'bg-blue-600 text-white ': 'box_slide2 bg-slate-900 text-slate-400'} cursor-pointer flex-1 flex items-center justify-center`}><h2 className="font-display text-3xl tracking-tight sm:text-4xl transition duration-1000 ease-in-out">Managed Services</h2></div>
+      <div className={`bg-red-600 flex w-full h-[50px]`}>
+        <div onClick={() => toggle_tab(1)} className={`${toggle === 1 ? 'bg-blue-600 text-white': 'bg-slate-900 text-slate-400'} cursor-pointer flex-1 flex items-center justify-center`}><h2 className="font-display text-md tracking-tight sm:text-4xl transition duration-1000 ease-in-out">Implementations</h2></div>
+        <div onClick={() => toggle_tab(2)} className={`${toggle === 2 ? 'bg-blue-600 text-white ': 'bg-slate-900 text-slate-400'} cursor-pointer flex-1 flex items-center justify-center`}><h2 className="font-display text-md tracking-tight sm:text-4xl transition duration-1000 ease-in-out">Managed Services</h2></div>
       </div>
       {toggle === 1 && (
         <Container className='py-20 sm:py-32'>
