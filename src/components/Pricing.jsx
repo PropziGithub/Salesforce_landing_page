@@ -110,8 +110,8 @@ export function Pricing() {
       className="bg-slate-900 "
     >
       <div className={`bg-red-600 flex w-full h-[50px]`}>
-        <div onClick={() => toggle_tab(1)} className={`${toggle === 1 ? 'bg-blue-600 text-white': 'bg-slate-900 text-slate-400'} cursor-pointer flex-1 flex items-center justify-center`}><h2 className="font-display text-md tracking-tight sm:text-4xl transition duration-1000 ease-in-out">Implementations</h2></div>
-        <div onClick={() => toggle_tab(2)} className={`${toggle === 2 ? 'bg-blue-600 text-white ': 'bg-slate-900 text-slate-400'} cursor-pointer flex-1 flex items-center justify-center`}><h2 className="font-display text-md tracking-tight sm:text-4xl transition duration-1000 ease-in-out">Managed Services</h2></div>
+        <div onClick={() => toggle_tab(1)} className={`${toggle === 1 ? 'bg-blue-600 text-white': 'bg-slate-900 text-slate-400'} cursor-pointer flex-1 flex items-center justify-center py-[30px]`}><h2 className="font-display text-md tracking-tight sm:text-4xl transition duration-1000 ease-in-out">Implementations</h2></div>
+        <div onClick={() => toggle_tab(2)} className={`${toggle === 2 ? 'bg-blue-600 text-white ': 'bg-slate-900 text-slate-400'} cursor-pointer flex-1 flex items-center justify-center py-[30px]`}><h2 className="font-display text-md tracking-tight sm:text-4xl transition duration-1000 ease-in-out">Managed Services</h2></div>
       </div>
       {toggle === 1 && (
         <Container className='py-20 sm:py-32'>
@@ -124,8 +124,7 @@ export function Pricing() {
             for everyone.
           </h2>
           <p className="mt-4 text-lg text-slate-400">
-            It doesn’t matter what size your business is, our software won’t
-            work well for you.
+            {`it doesn't matter what size your business is, we have solutions that will work for any company.`}
           </p>
         </div>
         <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
@@ -189,8 +188,7 @@ export function Pricing() {
             for everyone.
           </h2>
           <p className="mt-4 text-lg text-slate-400">
-            It doesn’t matter what size your business is, our software won’t
-            work well for you.
+          {`it doesn't matter what size your business is, we have solutions that will work for any company.`}
           </p>
         </div>
         <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">

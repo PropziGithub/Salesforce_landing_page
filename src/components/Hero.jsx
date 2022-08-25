@@ -21,7 +21,7 @@ export function Hero() {
           </svg>
           <span className="relative">made simple</span>
         </span>{' '}
-        for sophisticated businesses.
+        for simple businesses.
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
         Salesforce is an incredibly powerful tool.

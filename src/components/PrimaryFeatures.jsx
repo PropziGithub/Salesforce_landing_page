@@ -17,25 +17,31 @@ const features = [
   {
     title: 'Salesforce',
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
+      `One of the greatest strengths of Salesforce is in its flexibility and ability to be customized.
+       Our team can help automate tedious manual processes and integrate with various platforms saving you time!`,
     image: screenshotPayroll,
   },
   {
     title: 'Marketing Cloud',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
+      `Connecting all customer data, Marketing Cloud enables you to deliver relevant customer
+       journeys across all channels. With our team of experts, you'll be able to personalize your
+        message and offer people a seamless experience`,
     image: screenshotExpenses,
   },
   {
     title: 'Service Cloud',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
+      `With Service Cloud, your company can give customers a more personalized experience and respond faster to their needs.
+       Let us show you how we can help your business grow by integrating services and leveraging the power of Service Cloud.`,
     image: screenshotVatReturns,
   },
   {
     title: 'Pardot',
     description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
+      `The world's leading sales and marketing platform, Pardot is designed to help B2B professionals generate and manage leads,
+       target email campaigns and automate them. Our team can help you automate common marketing tasks, like tracking customer
+       behaviours and creating digital marketing campaigns.`,
     image: screenshotReporting,
   },
 ]
@@ -96,7 +102,7 @@ export function PrimaryFeatures() {
                     <div
                       key={feature.title}
                       className={clsx(
-                        'group relative rounded-full py-1 px-4 lg:rounded-r-none lg:rounded-l-xl lg:p-6',
+                        'group relative rounded-full py-1 px-4 lg:rounded-r-none lg:rounded-l-xl lg:p-5',
                         selectedIndex === featureIndex
                           ? 'bg-white lg:bg-white/10 lg:ring-1 lg:ring-inset lg:ring-white/10'
                           : 'hover:bg-white/10 lg:hover:bg-white/5'
