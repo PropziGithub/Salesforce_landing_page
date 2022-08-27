@@ -6,53 +6,73 @@ import backgroundImage from '@/images/background-faqs.jpg'
 const faqs = [
   [
     {
-      question: 'Does TaxPal handle VAT?',
+      question: 'What Are Salesforce Managed Services?',
       answer:
-        'Well no, but if you move your company offshore you can probably ignore it.',
+      `Salesforce Managed Services is a way to outsource the installation, implementation, and everyday administrative of your Salesforce. 
+      You can contract Spark&Spur to assist you with all things Salesforce - this can free your staff to focus on more strategic tasks and provide peace of mind knowing that your Salesforce is in expert hands.
+      `,
     },
     {
-      question: 'Can I pay for my subscription via purchase order?',
-      answer: 'Absolutely, we are happy to take your money in all forms.',
+      question: 'Are Salesforce Services Right For My Business?',
+      answer: `Salesforce services can help companies of almost any size to achieve their business goals. Working with a reputable Salesforce partner can help you get the most out of your investment. 
+      By outsourcing Salesforce administration and management tasks, companies can focus on their core competencies, freeing up valuable resources.
+      `,
     },
     {
-      question: 'How do I apply for a job at TaxPal?',
+      question: 'How can Service Cloud help my business increase customer loyalty, retention, and satisfaction?',
       answer:
-        'We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.',
+        `When your customers reach out to you, your customer service team needs to be equipped to answer any questions.
+         Because the smarter your customer service is, the more likely customers are to return.
+         Service Cloud enables your team to work faster, improving customer satisfaction and reducing costs.`,
     },
   ],
   [
     {
-      question: 'What was that testimonial about tax fraud all about?',
+      question: 'How Can Salesforce Increase Sales?',
       answer:
-        'TaxPal is just a software application, ultimately your books are your responsibility.',
+        `By automating tasks and providing valuable insights, Salesforce can help organizations boost their sales
+         and improve customer satisfaction. Whether you need help tracking leads, communicating with clients, or
+         managing your pipeline, Salesforce has a solution. Beyond that, it can be fully customized and scaled to
+         meet the needs of your businesses.
+        `,
     },
     {
       question:
-        'TaxPal sounds horrible but why do I still feel compelled to purchase?',
+        'Salesforce Has Been a Part of Our Operation for a Long Time, Why Bring in a Managed Service now?',
       answer:
-        'This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.',
+        `We are the experts in Salesforce so you don’t have to be. Salesforce is a dynamic platform that is constantly
+         changing and evolving. This makes it an incredibly powerful tool for businesses, so having a dedicated Salesforce
+         partner on the pulse of all things Salesforce will help you navigate evolving functionality and updates `,
     },
     {
       question:
-        'I found other companies called TaxPal, are you sure you can use this name?',
+        'When is the Best Time to Start Salesforce Services?',
       answer:
-        'Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.',
+        `The best time to start services may vary depending on your specific needs. In general, it is most beneficial to
+         do so when you are experiencing consistent growth and require additional support to maintain operation levels.`,
     },
   ],
   [
     {
-      question: 'How do you generate reports?',
+      question: 'Does Spark&Spur Provide Custom Solutions for Salesforce?',
       answer:
-        'You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.',
+        `Yes, we have the knowledge and experience to help you get the most out of Salesforce. Our team of expert developers can 
+        create bespoke Salesforce solutions according to your specific needs and requirements.`,
     },
     {
-      question: 'Can we expect more inventory features?',
-      answer: 'In life it’s really better to never expect anything at all.',
+      question: 'How Long Does a Salesforce Implementation Take?',
+      answer: `Depending on the size and complexity of your organization, as well as the scope of the project, 
+      a Salesforce implementation can take
+       anywhere from a couple of weeks to several months. The key is to have realistic expectations and to plan for success.
+       We take our time performing expert implementations. This allows us to create a high-quality product while also remaining efficient.
+       `,
     },
     {
-      question: 'I lost my password, how do I get into my account?',
+      question: 'Is Salesforce Right For Small Businesses?',
       answer:
-        'Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.',
+        `Sales platforms can be a big investment, and small businesses may not have the budget for it.
+         Salesforce offers a great return on investment because it automates and streamlines your sales process. By using it, 
+        you can keep track of your sales pipeline, manage customer relationships, and automate repetitive tasks.`,
     },
   ],
 ]

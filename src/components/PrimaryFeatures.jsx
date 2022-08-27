@@ -5,10 +5,10 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-features.jpg'
-import screenshotExpenses from '@/images/screenshots/expenses.png'
-import screenshotPayroll from '@/images/screenshots/payroll.png'
-import screenshotReporting from '@/images/screenshots/reporting.png'
-import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
+import screenshotSalesforce from '@/images/screenshots/salesforce.jpg'
+import screenshotMarketing from '@/images/screenshots/marketing.jpg'
+import screenshotServices from '@/images/screenshots/service.jpg'
+import screenshotPardot from '@/images/screenshots/pardot.jpg'
 import Carousel from './Carousel'
 
 // import '@/styles/tailwind.css'
@@ -19,7 +19,7 @@ const features = [
     description:
       `One of the greatest strengths of Salesforce is in its flexibility and ability to be customized.
        Our team can help automate tedious manual processes and integrate with various platforms saving you time!`,
-    image: screenshotPayroll,
+    image: screenshotSalesforce,
   },
   {
     title: 'Marketing Cloud',
@@ -27,14 +27,14 @@ const features = [
       `Connecting all customer data, Marketing Cloud enables you to deliver relevant customer
        journeys across all channels. With our team of experts, you'll be able to personalize your
         message and offer people a seamless experience`,
-    image: screenshotExpenses,
+    image: screenshotMarketing,
   },
   {
     title: 'Service Cloud',
     description:
       `With Service Cloud, your company can give customers a more personalized experience and respond faster to their needs.
        Let us show you how we can help your business grow by integrating services and leveraging the power of Service Cloud.`,
-    image: screenshotVatReturns,
+    image: screenshotServices,
   },
   {
     title: 'Pardot',
@@ -42,7 +42,7 @@ const features = [
       `The world's leading sales and marketing platform, Pardot is designed to help B2B professionals generate and manage leads,
        target email campaigns and automate them. Our team can help you automate common marketing tasks, like tracking customer
        behaviours and creating digital marketing campaigns.`,
-    image: screenshotReporting,
+    image: screenshotPardot,
   },
 ]
 
@@ -85,8 +85,7 @@ export function PrimaryFeatures() {
         <div className='max-w-2xl xl:max-w-none'>
            <Carousel/>
             <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
+            Get the most out of your Salesforce.
           </p>
         </div>
         <Tab.Group

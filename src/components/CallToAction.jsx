@@ -3,6 +3,7 @@ import Image from 'next/future/image'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-call-to-action.jpg'
+import BookAppointment from './Book'
 
 export function CallToAction() {
   return (
@@ -26,10 +27,12 @@ export function CallToAction() {
           <p className="mt-4 text-lg tracking-tight text-white">
            {`It's time to take control of your next Salesforce campaign. Let's talk about what you want to achieve and how we can make it happen.`}
           </p>
-          <Button href="/register" color="white" className="mt-10">
+          </div>
+          <BookAppointment/>
+          {/* <Button href="/register" color="white" className="mt-10">
           Book a Call
-          </Button>
-        </div>
+          </Button> */}
+       
       </Container>
     </section>
   )
