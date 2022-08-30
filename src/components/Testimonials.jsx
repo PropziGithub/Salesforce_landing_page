@@ -48,26 +48,26 @@ const testimonials = [
       },
     },
   ],
-  [
-    {
-      content:
-        'I used to have to remit tax to the EU and with TaxPal I somehow don’t have to do that anymore. Nervous to travel there now though.',
-      author: {
-        name: 'Peter Renolds',
-        role: 'Founder of West Inc',
-        image: avatarImage3,
-      },
-    },
-    {
-      content:
-        'This is the fourth email I’ve sent to your support team. I am literally being held in jail for tax fraud. Please answer your damn emails, this is important.',
-      author: {
-        name: 'Amy Hahn',
-        role: 'Director at Velocity Industries',
-        image: avatarImage4,
-      },
-    },
-  ],
+  // [
+  //   {
+  //     content:
+  //       'I used to have to remit tax to the EU and with TaxPal I somehow don’t have to do that anymore. Nervous to travel there now though.',
+  //     author: {
+  //       name: 'Peter Renolds',
+  //       role: 'Founder of West Inc',
+  //       image: avatarImage3,
+  //     },
+  //   },
+  //   {
+  //     content:
+  //       'This is the fourth email I’ve sent to your support team. I am literally being held in jail for tax fraud. Please answer your damn emails, this is important.',
+  //     author: {
+  //       name: 'Amy Hahn',
+  //       role: 'Director at Velocity Industries',
+  //       image: avatarImage4,
+  //     },
+  //   },
+  // ],
 ]
 
 function QuoteIcon(props) {
@@ -97,7 +97,7 @@ export function Testimonials() {
         </div>
         <ul
           role="list"
-          className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3"
+          className="mx-auto mt-16 grid max-w-2xl lg:w-[800px] grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-2"
         >
           {testimonials.map((column, columnIndex) => (
             <li key={columnIndex}>
