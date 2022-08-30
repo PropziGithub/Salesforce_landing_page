@@ -52,7 +52,7 @@ function Plan({ name, price, description, href, features, featured = false, btnt
   return (
     <section
       className={clsx(
-        'flex flex-col rounded-3xl px-6 sm:px-8',
+        'flex flex-col rounded-3xl px-6 sm:px-8 lg:w-[350px] xl:w-[350px] lg:mx-4 xl:mx-4',
         featured ? 'order-first bg-blue-600 py-8 lg:order-none' : 'lg:py-8'
       )}
     >
@@ -107,11 +107,11 @@ export function Pricing() {
     <section
       id="pricing"
       aria-label="Pricing"
-      className="bg-slate-900 "
+      className="bg-slate-900 flex flex-col justify-center"
     >
       <div className={`bg-red-600 flex w-full h-[50px]`}>
-        <div onClick={() => toggle_tab(1)} className={`${toggle === 1 ? 'bg-blue-600 text-white': 'bg-slate-900 text-slate-400'} cursor-pointer flex-1 flex items-center justify-center py-[30px]`}><h2 className="font-display text-md tracking-tight sm:text-4xl transition duration-1000 ease-in-out">Implementations</h2></div>
-        <div onClick={() => toggle_tab(2)} className={`${toggle === 2 ? 'bg-blue-600 text-white ': 'bg-slate-900 text-slate-400'} cursor-pointer flex-1 flex items-center justify-center py-[30px]`}><h2 className="font-display text-md tracking-tight sm:text-4xl transition duration-1000 ease-in-out">Managed Services</h2></div>
+        <div onClick={() => toggle_tab(1)} className={`${toggle === 1 ? 'bg-blue-600 text-white': 'bg-slate-900 text-slate-400'} cursor-pointer flex-1 flex items-center justify-center py-[50px]`}><h2 className="font-display text-md tracking-tight sm:text-3xl transition duration-1000 ease-in-out">Implementations</h2></div>
+        <div onClick={() => toggle_tab(2)} className={`${toggle === 2 ? 'bg-blue-600 text-white ': 'bg-slate-900 text-slate-400'} cursor-pointer flex-1 flex items-center justify-center py-[50px]`}><h2 className="font-display text-md tracking-tight sm:text-3xl transition duration-1000 ease-in-out">Managed Services</h2></div>
       </div>
       {toggle === 1 && (
         <Container className='py-20 sm:py-32'>
@@ -127,10 +127,12 @@ export function Pricing() {
             {`it doesn't matter what size your business is, we have solutions that will work for any company.`}
           </p>
         </div>
-        <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
+          <div className='flex items-center justify-center'>
+          <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-2 xl:mx-0 xl:gap-x-8">
           <Plan
+            featured
             name="Starter"
-            price="$9"
+            price="$130"
             description="Good for anyone who is self-employed and just getting started."
             href="/register"
             features={[
@@ -144,24 +146,8 @@ export function Pricing() {
           />
           <Plan
             featured
-            name="Small business"
-            price="$15"
-            description="Perfect for small / medium sized businesses."
-            href="/register"
-            features={[
-              'Send 25 quotes and invoices',
-              'Connect up to 5 bank accounts',
-              'Track up to 50 expenses per month',
-              'Automated payroll support',
-              'Export up to 12 reports',
-              'Bulk reconcile transactions',
-              'Track in multiple currencies',
-            ]}
-            btntext='Get started'
-          />
-          <Plan
             name="Enterprise"
-            price="$39"
+            price="custom"
             description="For even the biggest enterprise companies."
             href="/register"
             features={[
@@ -171,8 +157,9 @@ export function Pricing() {
               'Automated payroll support',
               'Export up to 25 reports, including TPS',
             ]}
-            btntext='Get started'
+            btntext='Get Quota'
           />
+        </div>
         </div>
       </Container>
       )}
@@ -190,11 +177,13 @@ export function Pricing() {
           <p className="mt-4 text-lg text-slate-400">
           {`it doesn't matter what size your business is, we have solutions that will work for any company.`}
           </p>
-        </div>
-        <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
-          <Plan
+          </div>
+          <div className='flex items-center justify-center'>
+          <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-2 xl:mx-0 xl:gap-x-8">
+            <Plan
+            featured
             name="Starter"
-            price="$130 CAD"
+            price="$130"
             description="Good for anyone who is self-employed and just getting started."
             href="/register"
             features={[
@@ -206,26 +195,10 @@ export function Pricing() {
             ]}
             btntext='Hourly Support'
           />
-          <Plan
+            <Plan
             featured
-            name="Small business"
-            price="$15"
-            description="Perfect for small / medium sized businesses."
-            href="/register"
-            features={[
-              'Send 25 quotes and invoices',
-              'Connect up to 5 bank accounts',
-              'Track up to 50 expenses per month',
-              'Automated payroll support',
-              'Export up to 12 reports',
-              'Bulk reconcile transactions',
-              'Track in multiple currencies',
-            ]}
-            btntext='Get started'
-          />
-          <Plan
             name="Enterprise"
-            price="$39"
+            price="custom"
             description="For even the biggest enterprise companies."
             href="/register"
             features={[
@@ -237,6 +210,7 @@ export function Pricing() {
             ]}
             btntext='Book a Meeting'
           />
+        </div>
         </div>
       </Container>
       ) }

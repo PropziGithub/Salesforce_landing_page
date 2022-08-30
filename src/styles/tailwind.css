@@ -7,14 +7,3 @@
 }
 
 
-.box_slide {
-  --mask: linear-gradient(-135deg,#0000 70.71px,#000 0);	
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
-}
-
-.box_slide2{
-  --mask: linear-gradient(45deg,#0000 70.71px,#000 0);	
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
-}

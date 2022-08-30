@@ -20,11 +20,11 @@ export function CallToAction() {
         unoptimized
       />
       <Container className="relative">
-        <div className="mx-auto max-w-lg text-center">
+        <div className="mx-auto max-w-xl text-center">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
           {`Let's talk about your next Salesforce campaign`}
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-white">
+          <p className="mt-4 text-lg tracking-tight text-white mx-0">
            {`It's time to take control of your next Salesforce campaign. Let's talk about what you want to achieve and how we can make it happen.`}
           </p>
           </div>

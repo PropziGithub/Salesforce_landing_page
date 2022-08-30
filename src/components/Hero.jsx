@@ -21,7 +21,7 @@ export function Hero() {
           </svg>
           <span className="relative">made simple</span>
         </span>{' '}
-        for simple businesses.
+        for  businesses.
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
         Salesforce is an incredibly powerful tool.
@@ -44,9 +44,9 @@ export function Hero() {
       </div>
       <div className="mt-36 lg:mt-44 flex flex-col items-center justify-center">
         <p className="font-display text-base text-slate-900">
-          Trusted by these five companies so far
+          Trusted by these companies
         </p>
-        <div className='mt-8 w-full'>
+        <div className='mt-8 w-full lg:w-[600px] xl:w-[600px] 2xl:w-[600px]'>
         <IconSlider/>
         </div>
       </div>

@@ -42,7 +42,7 @@ const faqs = [
       answer:
         `We are the experts in Salesforce so you don’t have to be. Salesforce is a dynamic platform that is constantly
          changing and evolving. This makes it an incredibly powerful tool for businesses, so having a dedicated Salesforce
-         partner on the pulse of all things Salesforce will help you navigate evolving functionality and updates `,
+         partner on the pulse of all things Salesforce will help you navigate evolving functionality and updates. `,
     },
     {
       question:
@@ -96,13 +96,12 @@ export function Faqs() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
             id="faq-title"
-            className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl"
+            className="font-display uppercase text-3xl tracking-tight text-slate-900 sm:text-4xl"
           >
             Frequently asked questions
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            If you can’t find what you’re looking for, email our support team
-            and if you’re lucky someone will get back to you.
+            {`If you can't find something, email us and someone will get back to you shortly`}
           </p>
         </div>
         <ul

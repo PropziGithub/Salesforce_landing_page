@@ -11,7 +11,6 @@ import screenshotServices from '@/images/screenshots/service.jpg'
 import screenshotPardot from '@/images/screenshots/pardot.jpg'
 import Carousel from './Carousel'
 
-// import '@/styles/tailwind.css'
 
 const features = [
   {

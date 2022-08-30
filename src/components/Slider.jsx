@@ -10,7 +10,8 @@ import logoTmx from '@/images/logos/tmxlogo.svg'
 import logoPayfirma from '@/images/logos/payfirmalogo.svg'
 
 const IconSlider = () => {
-    const settings = {
+  const settings = {
+        className: "slider variable-width",
         dots: false,
         infinite: true,
         autoplay: true,
@@ -60,7 +61,7 @@ const IconSlider = () => {
             {
                 company_logo_name.map((c_l_name, index) => (
                     <div key={index} className='mr-2'>
-                        <Image src={c_l_name.name} alt='logos'  unoptimized />
+                        <Image src={c_l_name.name} alt='logos' className="mx-0 px-0"  unoptimized />
                    </div> 
                 ))
             }
