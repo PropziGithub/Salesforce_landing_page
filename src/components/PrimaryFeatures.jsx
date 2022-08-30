@@ -5,10 +5,10 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-features.jpg'
-import screenshotSalesforce from '@/images/screenshots/salesforce.jpg'
-import screenshotMarketing from '@/images/screenshots/marketing.jpg'
-import screenshotServices from '@/images/screenshots/service.jpg'
-import screenshotPardot from '@/images/screenshots/pardot.jpg'
+import screenshotSalesforce from '@/images/screenshots/salesforce.png'
+import screenshotMarketing from '@/images/screenshots/marketing_cloud.png'
+import screenshotServices from '@/images/screenshots/service_cloud.png'
+import screenshotPardot from '@/images/screenshots/pardot.png'
 import Carousel from './Carousel'
 
 
