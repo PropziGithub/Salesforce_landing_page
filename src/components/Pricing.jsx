@@ -133,7 +133,7 @@ export function Pricing() {
             featured
             name="Starter"
             price="$130"
-            description="Good for anyone who is self-employed and just getting started."
+            description="Great for smaller businesses and individual projects."
             href="/register"
             features={[
               'Send 10 quotes and invoices',
@@ -147,7 +147,7 @@ export function Pricing() {
           <Plan
             featured
             name="Enterprise"
-            price="custom"
+            price="Custom"
             description="For even the biggest enterprise companies."
             href="/register"
             features={[
@@ -184,7 +184,7 @@ export function Pricing() {
             featured
             name="Starter"
             price="$130"
-            description="Good for anyone who is self-employed and just getting started."
+            description="Great for smaller businesses and individual projects."
             href="/register"
             features={[
               'Send 10 quotes and invoices',
@@ -198,7 +198,7 @@ export function Pricing() {
             <Plan
             featured
             name="Enterprise"
-            price="custom"
+            price="Custom"
             description="For even the biggest enterprise companies."
             href="/register"
             features={[

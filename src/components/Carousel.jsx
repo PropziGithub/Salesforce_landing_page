@@ -20,7 +20,7 @@ const Carousel = () => {
         {name: 'Everything you need for your next Marketing campaign.'},
         {name: 'Everything you need for your next Service campaign.'},
         {name: 'Everything you need for your next Retention campaign.'},
-        {name: 'Everything you need for your next Promotion campaign.'}
+        {name: 'Everything you need for your next Promotional campaign.'}
     ]
    
     return (

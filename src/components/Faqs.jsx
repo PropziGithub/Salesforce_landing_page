@@ -96,12 +96,12 @@ export function Faqs() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
             id="faq-title"
-            className="font-display uppercase text-3xl tracking-tight text-slate-900 sm:text-4xl"
+            className="font-display capitalize text-3xl tracking-tight text-slate-900 sm:text-4xl"
           >
-            Frequently asked questions
+            Frequently Asked Questions.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            {`If you can't find something, email us and someone will get back to you shortly`}
+            {`If you can't find something, email us and someone will get back to you shortly.`}
           </p>
         </div>
         <ul
