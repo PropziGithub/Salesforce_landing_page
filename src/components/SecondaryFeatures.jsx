@@ -4,10 +4,9 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-// import screenshotContacts from '@/images/screenshots/contacts.png'
-// import screenshotInventory from '@/images/screenshots/inventory.png'
-// import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
-import screenGif from '@/images/screenshots/snsgif.gif'
+import reportingGif from '@/images/screenshots/t_reporting.gif'
+import marketingGif from '@/images/screenshots/t_marketing.gif'
+import managementGif from '@/images/screenshots/t_management.gif'
 
 const features = [
 
@@ -17,7 +16,7 @@ const features = [
       'Easily connect with potential customers and build long-lasting relationships.',
     description:
       'By sending targeted messages to specific groups of customers, you can ensure that your communications are timely and relevant.',
-    image: screenGif,
+    image: marketingGif,
     icon: function InventoryIcon() {
       return (
         <>
@@ -46,7 +45,7 @@ const features = [
       'Keep track of your leads, opportunities, and customers in one convenient place.',
     description:
       `Never miss an opportunity to follow up. By keeping track of your leads, you'll see at a glance which leads are hot and which ones need a little more attention.`,
-    image:screenGif,
+    image:managementGif,
     icon: function ContactsIcon() {
       return (
         <>
@@ -69,7 +68,7 @@ const features = [
     summary: 'No more lucky guesses. Use up-to-date reporting to forge a business plan.',
     description:
       'Analyzing past data can give you crucial insights into your business and where it might be headed to scale your business accordingly. ',
-    image: screenGif,
+    image: reportingGif,
     icon: function ReportingIcon() {
       let id = useId()
       return (
