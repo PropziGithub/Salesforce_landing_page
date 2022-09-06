@@ -91,8 +91,8 @@ export function Testimonials() {
           Loved by businesses in all industries.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            {`Salesforce is all about simple solutions. We strive to deliver a well-crafted fixes,
-             providing value and solving for inefficiencies. Our team is here to make your life easier.`}
+            {`Like a tailor, we’ll build you a bespoke Salesforce instance that’s the right fit for your organization.
+             We’ll craft the environment to your business needs, provide support solutions and help you scale when it’s time.`}
           </p>
         </div>
         <ul

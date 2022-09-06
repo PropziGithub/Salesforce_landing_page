@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 
 import clsx from 'clsx'
 
@@ -96,12 +96,6 @@ function Plan({ name, price, description, href, features, featured = false, btnt
 }
 
 export function Pricing() {
-  const [toggle, set_toggle] = useState(1);
-
-  const toggle_tab = index => {
-    set_toggle(index);
-  };
-
 
   return (
     <section
@@ -109,11 +103,10 @@ export function Pricing() {
       aria-label="Pricing"
       className="bg-slate-900 flex flex-col justify-center"
     >
-      <div className={`bg-red-600 flex w-full h-[50px]`}>
+      {/* <div className={`bg-red-600 flex w-full h-[50px]`}>
         <div onClick={() => toggle_tab(1)} className={`${toggle === 1 ? 'bg-blue-600 text-white': 'bg-slate-900 text-slate-400'} cursor-pointer flex-1 flex items-center justify-center py-[50px]`}><h2 className="font-display text-md tracking-tight sm:text-3xl transition duration-1000 ease-in-out">Implementations</h2></div>
         <div onClick={() => toggle_tab(2)} className={`${toggle === 2 ? 'bg-blue-600 text-white ': 'bg-slate-900 text-slate-400'} cursor-pointer flex-1 flex items-center justify-center py-[50px]`}><h2 className="font-display text-md tracking-tight sm:text-3xl transition duration-1000 ease-in-out">Managed Services</h2></div>
-      </div>
-      {toggle === 1 && (
+      </div> */}
         <Container className='py-20 sm:py-32'>
         <div className="md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
@@ -162,58 +155,6 @@ export function Pricing() {
         </div>
         </div>
       </Container>
-      )}
-
-      {toggle === 2 && (
-        <Container className='py-20 sm:py-32'>
-        <div className="md:text-center">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
-            <span className="relative whitespace-nowrap">
-              <SwirlyDoodle className="absolute top-1/2 left-0 h-[1em] w-full fill-blue-400" />
-              <span className="relative">Simple pricing,</span>
-            </span>{' '}
-            for everyone.
-          </h2>
-          <p className="mt-4 text-lg text-slate-400">
-          {`it doesn't matter what size your business is, we have solutions that will work for any company.`}
-          </p>
-          </div>
-          <div className='flex items-center justify-center'>
-          <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-2 xl:mx-0 xl:gap-x-8">
-            <Plan
-            featured
-            name="Starter"
-            price="$130"
-            description="Great for smaller businesses and individual projects."
-            href="/register"
-            features={[
-              'Send 10 quotes and invoices',
-              'Connect up to 2 bank accounts',
-              'Track up to 15 expenses per month',
-              'Manual payroll support',
-              'Export up to 3 reports',
-            ]}
-            btntext='Hourly Support'
-          />
-            <Plan
-            featured
-            name="Enterprise"
-            price="Custom"
-            description="For even the biggest enterprise companies."
-            href="/register"
-            features={[
-              'Send unlimited quotes and invoices',
-              'Connect up to 15 bank accounts',
-              'Track up to 200 expenses per month',
-              'Automated payroll support',
-              'Export up to 25 reports, including TPS',
-            ]}
-            btntext='Book a Meeting'
-          />
-        </div>
-        </div>
-      </Container>
-      ) }
     </section>
   )
 }

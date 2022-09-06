@@ -217,7 +217,7 @@ export function SecondaryFeatures() {
     <section
       id="secondary-features"
       aria-label="Features for simplifying everyday business tasks"
-      className="pt-20 pb-14 sm:pb-20 sm:pt-32 lg:pb-32"
+      className="pt-20 pb-14 sm:pb-20  lg:pb-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl">
@@ -225,8 +225,8 @@ export function SecondaryFeatures() {
           Simplify everyday Salesforce tasks.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-center">
-            Because you’d probably be a little confused if we suggested you
-            complicate your everyday business tasks instead.
+            We strive to deliver well-crafted fixes, providing value
+            and solving for inefficiencies. Our team is here to make your life easier.
           </p>
         </div>
         <FeaturesMobile />

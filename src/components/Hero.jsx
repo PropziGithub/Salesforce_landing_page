@@ -7,7 +7,7 @@ import IconSlider from './Slider'
 
 export function Hero() {
   return (
-    <Container className="pt-20 pb-16 text-center lg:pt-32">
+    <Container className="pt-16 pb-16 text-center lg:pt-16">
       <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
         Salesforce{' '}
         <span className="relative whitespace-nowrap text-blue-600">
@@ -24,8 +24,9 @@ export function Hero() {
         for  businesses.
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        Salesforce is an incredibly powerful tool.
-        But you need certified experts to truly bring your dream marketing campaigns to life.
+        {`Salesforce is an incredibly powerful tool.
+         Whether you're a small business or a large enterprise,
+          Salesforce can help you transform the way you work.`}
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
         <Button href="/register">Get a Quote</Button>
@@ -42,11 +43,11 @@ export function Hero() {
           <span className="ml-3">See Testimonials</span>
         </Button>
       </div>
-      <div className="mt-36 lg:mt-44 flex flex-col items-center justify-center">
+      <div className="mt-24 lg:mt-24 flex flex-col items-center justify-center">
         <p className="font-display text-base text-slate-900">
           Trusted by these companies
         </p>
-        <div className='mt-8 w-full lg:w-[600px] xl:w-[600px] 2xl:w-[600px]'>
+        <div className='mt-8 w-full lg:w-[800px] xl:w-[800px] 2xl:w-[800px]'>
         <IconSlider/>
         </div>
       </div>

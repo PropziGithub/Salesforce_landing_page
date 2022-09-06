@@ -16,31 +16,30 @@ const features = [
   {
     title: 'Salesforce',
     description:
-      `One of the greatest strengths of Salesforce is in its flexibility and ability to be customized.
-       Our team can help automate tedious manual processes and integrate with various platforms saving you time!`,
+      `Let us build Salesforce solutions tailored to your organization’s requirements.
+       Our team can help build automation, lead capture, and data management and integrate
+       with various external SaaS platforms for a holistic understanding of your customers.`,
     image: screenshotSalesforce,
   },
   {
     title: 'Marketing Cloud',
     description:
-      `Connecting all customer data, Marketing Cloud enables you to deliver relevant customer
-       journeys across all channels. With our team of experts, you'll be able to personalize your
-        message and offer people a seamless experience`,
+      `Marketing Cloud enables you to deliver relevant customer communication journeys across all channels.
+       With our team of experts, personalize your message and offer your customers a seamless onscreen experience.`,
     image: screenshotMarketing,
   },
   {
     title: 'Service Cloud',
     description:
-      `With Service Cloud, your company can give customers a more personalized experience and respond faster to their needs.
-       Let us show you how we can help your business grow by integrating services and leveraging the power of Service Cloud.`,
+      `Give your customers a personalized experience, stay engaged with key data capture and respond faster to solve customer issues.
+      Let us show you how we can help your business grow by integrating services and leveraging the power of Service Cloud.`,
     image: screenshotServices,
   },
   {
     title: 'Pardot',
     description:
-      `The world's leading sales and marketing platform, Pardot is designed to help B2B professionals generate and manage leads,
-       target email campaigns and automate them. Our team can help you automate common marketing tasks, like tracking customer
-       behaviours and creating digital marketing campaigns.`,
+      `Generate and manage leads, target email campaigns and automate them.
+       Our team can help build and support automating common marketing tasks, like tracking customer behaviours and engagement activity.`,
     image: screenshotPardot,
   },
 ]
@@ -70,7 +69,7 @@ export function PrimaryFeatures() {
     <section
       id="features"
       aria-label="Features for running your books"
-      className="relative overflow-hidden bg-blue-600 pt-20 pb-28 sm:py-32"
+      className="relative overflow-hidden bg-blue-600 pt-10 pb-28 sm:pb-32"
     >
       <Image
         className="absolute top-1/2 left-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
@@ -100,7 +99,7 @@ export function PrimaryFeatures() {
                     <div
                       key={feature.title}
                       className={clsx(
-                        'group relative rounded-full py-1 px-4 lg:rounded-r-none lg:rounded-l-xl lg:p-5',
+                        'group relative rounded-full py-1 px-4  lg:rounded-xl lg:p-5',
                         selectedIndex === featureIndex
                           ? 'bg-white lg:bg-white/10 lg:ring-1 lg:ring-inset lg:ring-white/10'
                           : 'hover:bg-white/10 lg:hover:bg-white/5'
@@ -142,7 +141,7 @@ export function PrimaryFeatures() {
                         {feature.description}
                       </p>
                     </div>
-                    <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                    <div className="mt-10 w-[45rem] overflow-hidden rounded-xl  sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
                       <Image
                         className="w-full"
                         src={feature.image}
