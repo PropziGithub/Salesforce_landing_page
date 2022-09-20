@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-import Image from 'next/future/image'
-import Logo from '../images/logos/spark_force_logo.svg'
+import Logo from '@/components/Logo'
 
 import { AuthLayout } from '@/components/AuthLayout'
 import { Button } from '@/components/Button'
@@ -18,7 +17,9 @@ export default function Login() {
       <AuthLayout>
         <div className="flex flex-col">
           <Link href="/" aria-label="Home">
-          <div className='flex justify-center items-center h-10 w-auto'><Image src={Logo } alt='logos' className="w-auto h-56"  unoptimized /></div>
+            <div className='flex justify-center items-center h-10 w-auto'>
+            <Logo className='w-auto h-56' />
+          </div>
           </Link>
           <div className="mt-20">
             <h2 className="text-lg font-semibold text-gray-900">
