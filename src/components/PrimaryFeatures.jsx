@@ -81,7 +81,7 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className='max-w-2xl xl:max-w-none'>
            <Carousel/>
-            <p className="mt-6 text-lg tracking-tight text-blue-100">
+            <p className="text-center mt-6 text-lg tracking-tight text-blue-100">
             Get the most out of your Salesforce.
           </p>
         </div>

@@ -28,7 +28,7 @@ const Carousel = () => {
             <Slider {...settings}>
             {
                 compaign_name.map((c_name, index) => (
-                    <span key={index} className="font-display text-lg tracking-tight text-white sm:text-4xl md:text-4xl">
+                    <span key={index} className="text-center font-display text-lg tracking-tight text-white sm:text-4xl md:text-4xl">
                         {c_name.name}
                    </span> 
                 ))
