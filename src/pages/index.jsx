@@ -14,6 +14,7 @@ export default function Home() {
   return (
     <>
       <Head>
+        {/* this the page title */}
         <title>Spark&Spur - Salesforce made simple for simple businesses</title>
         <meta
           name="description"
