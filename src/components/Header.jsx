@@ -5,7 +5,7 @@ import clsx from 'clsx'
 import Image from 'next/future/image'
 
 import { Container } from '@/components/Container'
-import Logo from '@/images/logos/spark_force_logo.svg'
+import Logo from '../images/logos/spark_force_logo.svg'
 import { Button } from '@/components/Button'
 import { NavLink } from '@/components/NavLink'
 

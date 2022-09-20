@@ -5,7 +5,7 @@ import { AuthLayout } from '@/components/AuthLayout'
 import { Button } from '@/components/Button'
 import { SelectField, TextField } from '@/components/Fields'
 import Image from 'next/future/image'
-import Logo from '@/images/logos/spark_force_logo.svg'
+import Logo from '../images/logos/spark_force_logo.svg'
 
 export default function Register() {
   return (

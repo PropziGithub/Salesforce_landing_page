@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/future/image'
 
 import { Container } from '@/components/Container'
-import Logo from '@/images/logos/spark_force_logo.svg'
+import Logo from '../images/logos/spark_force_logo.svg'
 import { NavLink } from '@/components/NavLink'
 
 export function Footer() {

@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 import Image from 'next/future/image'
-import Logo from '@/images/logos/spark_force_logo.svg'
+import Logo from '../images/logos/spark_force_logo.svg'
 
 import { AuthLayout } from '@/components/AuthLayout'
 import { Button } from '@/components/Button'
