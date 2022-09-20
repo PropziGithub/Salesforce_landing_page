@@ -24,12 +24,12 @@ export function Hero() {
         for  businesses.
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        {`Salesforce is an incredibly powerful tool.
-         Whether you're a small business or a large enterprise,
-          Salesforce can help you transform the way you work.`}
+        {`Salesfore is an incredibly powerful tool but you need a certified
+         marketing and development team to bring your vision to life.
+         Sparkforce helps you execute on Salesforce and beyond`}
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
-        <Button href="/register">Get a Quote</Button>
+        <Button href="/register">Book a Call</Button>
         <Button
           href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           variant="outline"

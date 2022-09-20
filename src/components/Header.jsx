@@ -2,10 +2,11 @@ import { Fragment } from 'react'
 import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
+import Image from 'next/future/image'
 
-import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
+import Logo from '@/images/logos/spark_force_logo.svg'
+import { Button } from '@/components/Button'
 import { NavLink } from '@/components/NavLink'
 
 function MobileNavLink({ href, children }) {
@@ -96,7 +97,7 @@ export function Header() {
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
             <Link href="#" aria-label="Home">
-              <Logo className="h-10 w-auto" />
+            <div className='flex justify-center items-center h-10 w-auto'><Image src={Logo } alt='logos' className="w-auto h-56"  unoptimized /></div>
             </Link>
             <div className="hidden md:flex md:gap-x-6">
               <NavLink href="#features">Features</NavLink>

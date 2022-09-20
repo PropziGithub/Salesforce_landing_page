@@ -17,7 +17,7 @@ export default function Home() {
         <title>Spark&Spur - Salesforce made simple for simple businesses</title>
         <meta
           name="description"
-          content="Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited."
+          content="Salesfore is an incredibly powerful tool but you need a certified marketing and development team to bring your vision to life."
         />
       </Head>
       <Header />

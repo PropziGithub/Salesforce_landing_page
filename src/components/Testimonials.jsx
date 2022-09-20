@@ -2,8 +2,6 @@ import Image from 'next/future/image'
 
 import { Container } from '@/components/Container'
 import avatarImage1 from '@/images/avatars/avatar-1.png'
-import avatarImage2 from '@/images/avatars/avatar-2.png'
-import avatarImage3 from '@/images/avatars/avatar-3.png'
 import avatarImage4 from '@/images/avatars/avatar-4.png'
 import avatarImage5 from '@/images/avatars/avatar-5.png'
 
@@ -11,19 +9,24 @@ const testimonials = [
   [
     {
       content:
-        'TaxPal is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.',
+        `The team is highly responsive, and communication is never an issue. They act as trusted 
+         advisors within the company, and we consider them part of the team. Our market is extremely niche,
+         and they’ve learned and adapted, as seen through a lot of their
+         marketing efforts, and that’s been extremely impressive from our point of view`,
       author: {
-        name: 'Sheryl Berge',
-        role: 'CEO at Lynch LLC',
+        name: 'Akhil Chawla',
+        role: 'Executive Vice President at Sage Dental Partners',
         image: avatarImage1,
       },
     },
     {
       content:
-        'I’m trying to get a hold of someone in support, I’m in a lot of trouble right now and they are saying it has something to do with my books. Please get back to me right away.',
+        `Working together has enhanced our customer communications and engagement. 
+         The Sparkforce team is knowledgeable and always willing and able to help with a fast turnaround.
+         I know I can depend on them to generate quality content with seamless execution.`,
       author: {
-        name: 'Amy Hahn',
-        role: 'Director at Velocity Industries',
+        name: 'Leslie Provenzano',
+        role: 'Senior Global Marketing Manager at SCALABLE Network Technologies',
         image: avatarImage4,
       },
     },
@@ -31,43 +34,28 @@ const testimonials = [
   [
     {
       content:
-        'The best part about TaxPal is every time I pay my employees, my bank balance doesn’t go down like it used to. Looking forward to spending this extra cash when I figure out why my card is being declined.',
+        `Extremely helpful while keeping a smile on their faces. Sparkforce helped us bring the
+         Refer-a-Friend project to life. They were resourceful, answered questions, and made changes quickly.
+         They are a pleasure to work with.`,
       author: {
-        name: 'Leland Kiehn',
-        role: 'Founder of Kiehn and Sons',
+        name: 'Renée Scott',
+        role: 'Sales Supervisor at ConsumerCapital',
         image: avatarImage5,
       },
     },
     {
       content:
-        'There are so many things I had to do with my old software that I just don’t do at all with TaxPal. Suspicious but I can’t say I don’t love it.',
+       `All you want from a strategic partner. Sparkforce has supported our consumer lending business through four years of growth.
+        Their team maintains and supports all aspects of our Salesforce integration with our lending platform.
+        This includes all strategy implementations, daily real-time support, and process changes. 
+        Varun, Neil, and Team are proactive in suggesting product development and excellent at implementing improvements.`,
       author: {
-        name: 'Erin Powlowski',
-        role: 'COO at Armstrong Inc',
-        image: avatarImage2,
+        name: 'Kerry McDowell',
+        role: 'CanCap Management Group at ConsumerCapita',
+        image: avatarImage5,
       },
     },
   ],
-  // [
-  //   {
-  //     content:
-  //       'I used to have to remit tax to the EU and with TaxPal I somehow don’t have to do that anymore. Nervous to travel there now though.',
-  //     author: {
-  //       name: 'Peter Renolds',
-  //       role: 'Founder of West Inc',
-  //       image: avatarImage3,
-  //     },
-  //   },
-  //   {
-  //     content:
-  //       'This is the fourth email I’ve sent to your support team. I am literally being held in jail for tax fraud. Please answer your damn emails, this is important.',
-  //     author: {
-  //       name: 'Amy Hahn',
-  //       role: 'Director at Velocity Industries',
-  //       image: avatarImage4,
-  //     },
-  //   },
-  // ],
 ]
 
 function QuoteIcon(props) {
@@ -120,7 +108,7 @@ export function Testimonials() {
                             {testimonial.author.role}
                           </div>
                         </div>
-                        <div className="overflow-hidden rounded-full bg-slate-50">
+                        <div className="overflow-hidden rounded-full bg-slate-50 flex-none">
                           <Image
                             className="h-14 w-14 object-cover"
                             src={testimonial.author.image}

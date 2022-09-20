@@ -16,30 +16,29 @@ const features = [
   {
     title: 'Salesforce',
     description:
-      `Let us build Salesforce solutions tailored to your organization’s requirements.
-       Our team can help build automation, lead capture, and data management and integrate
-       with various external SaaS platforms for a holistic understanding of your customers.`,
+      `Build tailored Salesforce solutions, from lead capture and automated 
+       workflows to platform integrations and custom user permissions.`,
     image: screenshotSalesforce,
   },
   {
     title: 'Marketing Cloud',
     description:
-      `Marketing Cloud enables you to deliver relevant customer communication journeys across all channels.
-       With our team of experts, personalize your message and offer your customers a seamless onscreen experience.`,
+      `Communicate with your customers at the right time, on the right channel.
+       Create targeted customer journeys and personalize your brand's messaging.`,
     image: screenshotMarketing,
   },
   {
     title: 'Service Cloud',
     description:
-      `Give your customers a personalized experience, stay engaged with key data capture and respond faster to solve customer issues.
-      Let us show you how we can help your business grow by integrating services and leveraging the power of Service Cloud.`,
+      `Empower your customer service teams with AI-powered workflows. Stay engaged
+       with key data capture and respond faster to solve customer issues.`,
     image: screenshotServices,
   },
   {
     title: 'Pardot',
     description:
-      `Generate and manage leads, target email campaigns and automate them.
-       Our team can help build and support automating common marketing tasks, like tracking customer behaviours and engagement activity.`,
+      `Deliver connected experiences from all-in-one Pardot's CRM and marketing solution.
+       Our team can enable marketing, sales, and service teams to win deals and build customer loyalty.`,
     image: screenshotPardot,
   },
 ]

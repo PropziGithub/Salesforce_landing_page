@@ -1,7 +1,8 @@
 import Link from 'next/link'
+import Image from 'next/future/image'
 
 import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
+import Logo from '@/images/logos/spark_force_logo.svg'
 import { NavLink } from '@/components/NavLink'
 
 export function Footer() {
@@ -9,7 +10,7 @@ export function Footer() {
     <footer className="bg-slate-50">
       <Container>
         <div className="py-16">
-          <Logo className="mx-auto h-10 w-auto" />
+          <div className='flex justify-center items-center h-10 w-auto mx-auto '><Image src={Logo } alt='logos' className="w-auto h-56"  unoptimized /></div>
           <nav className="mt-10 text-sm" aria-label="quick links">
             <div className="-my-1 flex justify-center gap-x-6">
               <NavLink href="#features">Features</NavLink>

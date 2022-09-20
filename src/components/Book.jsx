@@ -1,13 +1,16 @@
+/* eslint-disable @next/next/no-sync-scripts */
 import React from "react";
-import { InlineWidget } from "react-calendly";
+import {Helmet} from "react-helmet";
 
 const BookAppointment = () => {
   return (
-    <div>
-      <InlineWidget
-        styles={{ width: "100%", height: "756px" }}
-        url="https://calendly.com/devnetwork/sales-meeting" />
-    </div>
+    <>
+    <div className="meetings-iframe-container" data-src="https://meetings.hubspot.com/sparknspur/sparkforce?embed=true"></div>
+      <Helmet>
+      <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+    </Helmet>
+    </>
+      
   );
 };
 

@@ -16,7 +16,7 @@ const features = [
       'Easily connect with potential customers and build long-lasting relationships.',
     description:
       'By sending targeted messages to specific groups of customers, you can ensure that your communications are timely and relevant.',
-    image: marketingGif,
+    image: reportingGif,
     icon: function InventoryIcon() {
       return (
         <>
@@ -40,7 +40,7 @@ const features = [
   },
 
   {
-    name: 'Lead Management',
+    name: 'Pipeline Management',
     summary:
       'Keep track of your leads, opportunities, and customers in one convenient place.',
     description:
@@ -68,7 +68,7 @@ const features = [
     summary: 'No more lucky guesses. Use up-to-date reporting to forge a business plan.',
     description:
       'Analyzing past data can give you crucial insights into your business and where it might be headed to scale your business accordingly. ',
-    image: reportingGif,
+    image: marketingGif,
     icon: function ReportingIcon() {
       let id = useId()
       return (
