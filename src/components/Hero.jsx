@@ -24,7 +24,7 @@ export function Hero() {
         for  businesses.
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        {`Salesfore is an incredibly powerful tool but you need a certified
+        {`Salesforce is an incredibly powerful tool but you need a certified
          marketing and development team to bring your vision to life.
          Sparkforce helps you execute on Salesforce and beyond`}
       </p>
