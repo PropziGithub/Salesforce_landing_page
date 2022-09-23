@@ -146,7 +146,7 @@ export function Pricing() {
               'On-going Salesforce Support ',
               'Dedicated Training Sessions With Your Team',
             ]}
-            btntext='Get Quote'
+            btntext='Get quote'
           />
         </div>
         </div>
