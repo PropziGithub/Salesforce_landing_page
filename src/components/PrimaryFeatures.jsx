@@ -82,7 +82,7 @@ export function PrimaryFeatures() {
         <div className='max-w-2xl xl:max-w-none'>
            <Carousel/>
             <p className="text-center mt-6 text-lg tracking-tight text-blue-100">
-            Get the most out of your Salesforce.
+            {`Salesforce doesn't have to be a pain. Let us take care of the tedious tasks for you.`}
           </p>
         </div>
         <Tab.Group
