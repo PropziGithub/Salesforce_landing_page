@@ -7,3 +7,33 @@
 }
 
 
+#compaign::before{
+  content: '';
+  animation:fade 20s infinite;
+  -webkit-animation:fade 20s infinite ;
+}
+
+
+@keyframes fade {
+  0% {
+    content: 'Sales compaign';
+    
+  }
+  25% {
+    content: 'Marketing compaign';
+    
+  }
+  50% {
+    content: 'Service compaign';
+    
+    }
+  75% {
+    content: 'Retention compaign';
+    }
+  100% {
+    content: 'Promotional compaign';
+    }
+
+}
+
+

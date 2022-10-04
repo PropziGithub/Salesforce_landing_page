@@ -123,7 +123,7 @@ export function Pricing() {
             name="Starter"
             price="From $130/h"
             description="Great for smaller businesses and individual projects."
-            href="/register"
+            href="#"
             features={[
               'Minimum 10 Hours',
               'Discovery Meeting With Dedicated Project Manager',
@@ -137,7 +137,7 @@ export function Pricing() {
             name="Enterprise"
             price="Custom"
             description="For even the biggest enterprise companies."
-            href="/register"
+            href="#"
             features={[
               'Billed By Project Scope',
               'Discovery Meeting With Dedicated Account Manager and Technical Lead',

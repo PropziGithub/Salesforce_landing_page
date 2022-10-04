@@ -109,9 +109,9 @@ export function Header() {
             <div className="hidden md:block">
               {/* <NavLink href="/login">Sign in</NavLink> */}
             </div>
-            <Button href="#pricing" color="blue">
+            <Button href="#book-a-call" color="blue">
               <span>
-                Get quote
+              Get Quote
               </span>
             </Button>
             <div className="-mr-1 md:hidden">

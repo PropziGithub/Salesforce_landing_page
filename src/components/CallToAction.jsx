@@ -1,6 +1,4 @@
 import Image from 'next/future/image'
-
-import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-call-to-action.jpg'
 import BookAppointment from './Book'
@@ -8,7 +6,7 @@ import BookAppointment from './Book'
 export function CallToAction() {
   return (
     <section
-      id="get-started-today"
+      id="book-a-call"
       className="relative overflow-hidden bg-blue-600 pt-20"
     >
       <Image

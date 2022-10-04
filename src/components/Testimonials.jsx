@@ -12,7 +12,7 @@ const testimonials = [
         `The team is highly responsive, and communication is never an issue. They act as trusted 
          advisors within the company, and we consider them part of the team. Our market is extremely niche,
          and they’ve learned and adapted, as seen through a lot of their
-         marketing efforts, and that’s been extremely impressive from our point of view`,
+         marketing efforts, and that’s been extremely impressive from our point of view.`,
       author: {
         name: 'Akhil Chawla',
         role: 'Executive Vice President at Sage Dental Partners',
