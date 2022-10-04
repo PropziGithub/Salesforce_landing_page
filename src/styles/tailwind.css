@@ -16,22 +16,22 @@
 
 @keyframes fade {
   0% {
-    content: 'Sales compaign';
+    content: 'Sales campaign';
     
   }
   25% {
-    content: 'Marketing compaign';
+    content: 'Marketing campaign';
     
   }
   50% {
-    content: 'Service compaign';
+    content: 'Service campaign';
     
     }
   75% {
-    content: 'Retention compaign';
+    content: 'Retention campaign';
     }
   100% {
-    content: 'Promotional compaign';
+    content: 'Promotional campaign';
     }
 
 }
