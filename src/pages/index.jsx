@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <Head>
         {/* Page title */}
-        <title>Sparkforce - Salesforce made simple for simple businesses</title>
+        <title>Spark&Spur - Salesforce made simple for simple businesses</title>
         <meta
           name="description"
           content="Salesfore is an incredibly powerful tool but you need a certified marketing and development team to bring your vision to life."

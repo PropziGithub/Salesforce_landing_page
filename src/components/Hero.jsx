@@ -26,7 +26,7 @@ export function Hero() {
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
         {`Salesforce is an incredibly powerful tool but you need a certified
          marketing and development team to bring your vision to life.
-         Sparkforce helps you execute on Salesforce and beyond.`}
+         Spark&Spur helps you execute on Salesforce and beyond.`}
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
         <Button href="#book-a-call">Book a Call</Button>
