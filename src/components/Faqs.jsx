@@ -7,16 +7,16 @@ const faqs = [
   [
     {
       question: 'What Are Salesforce Managed Services?',
-      answer:
-      `Salesforce Managed Services is a way to outsource the installation, implementation, and everyday administrative of your Salesforce. 
-      You can contract Spark&Spur to assist you with all things Salesforce - this can free your staff to focus on more strategic tasks and provide peace of mind knowing that your Salesforce is in expert hands.
-      `,
+      answer: `Salesforce Managed Services is a way to outsource the installation, implementation, and day-to-day administration
+        of your Salesforce. You can contact Spark&Spur to assist you with all things Salesforce - this can free your staff to focus
+        on more strategic tasks and provide peace of mind knowing that your Salesforce is in expert hands.`
+  ,
     },
     {
       question: 'Are Salesforce Services Right For My Business?',
-      answer: `Salesforce services can help companies of almost any size to achieve their business goals. Working with a reputable Salesforce partner can help you get the most out of your investment. 
-      By outsourcing Salesforce administration and management tasks, companies can focus on their core competencies, freeing up valuable resources.
-      `,
+      answer: `When your customers reach out to you, your customer service team needs to be equipped to answer any questions. 
+      Because the smarter your customer service is, the more likely customers are to return. Service Cloud enables your team to
+      work faster, improving customer satisfaction and reducing costs.`,
     },
     {
       question: 'How can Service Cloud help my business increase customer loyalty, retention, and satisfaction?',
@@ -29,16 +29,13 @@ const faqs = [
   [
     {
       question: 'How Can Salesforce Increase Sales?',
-      answer:
-        `By automating tasks and providing valuable insights, Salesforce can help organizations boost their sales
-         and improve customer satisfaction. Whether you need help tracking leads, communicating with clients, or
-         managing your pipeline, Salesforce has a solution. Beyond that, it can be fully customized and scaled to
-         meet the needs of your businesses.
-        `,
+      answer: `By automating tasks and providing valuable insights, Salesforce can help organizations boost their sales and improve customer satisfaction.
+       Whether you need help tracking leads, communicating with clients, or managing your pipeline, Salesforce has a solution. Beyond that, it can be fully
+       customized and scaled to meet your business's needs.`,
     },
     {
       question:
-        'Salesforce Has Been a Part of Our Operation for a Long Time, Why Bring in a Managed Service now?',
+        'Salesforce Has Been a Part of Our Operation for a Long Time. Why Bring in a Managed Service now?',
       answer:
         `We are the experts in Salesforce so you don’t have to be. Salesforce is a dynamic platform that is constantly
          changing and evolving. This makes it an incredibly powerful tool for businesses, so having a dedicated Salesforce
@@ -47,9 +44,8 @@ const faqs = [
     {
       question:
         'When is the Best Time to Start Salesforce Services?',
-      answer:
-        `The best time to start services may vary depending on your specific needs. In general, it is most beneficial to
-         do so when you are experiencing consistent growth and require additional support to maintain operation levels.`,
+      answer: `The best time to start services may vary depending on your specific needs. It is most beneficial to do so when you are experiencing consistent growth
+        and require additional support to maintain operation levels.`,
     },
   ],
   [
@@ -69,10 +65,9 @@ const faqs = [
     },
     {
       question: 'Is Salesforce Right For Small Businesses?',
-      answer:
-        `Sales platforms can be a big investment, and small businesses may not have the budget for it.
-         Salesforce offers a great return on investment because it automates and streamlines your sales process. By using it, 
-        you can keep track of your sales pipeline, manage customer relationships, and automate repetitive tasks.`,
+      answer: `Sales platforms can be a significant investment, and small businesses may not have the budget. Salesforce offers a great
+       return on investment because it automates and streamlines your sales process. Using it lets you keep track of your sales pipeline,
+       manage customer relationships, and automate repetitive tasks.`,
     },
   ],
 ]
@@ -101,7 +96,7 @@ export function Faqs() {
             Frequently Asked Questions.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            {`If you can't find something, email us and someone will get back to you shortly.`}
+            {`If you can't find something, email us, and someone will get back to you shortly.`}
           </p>
         </div>
         <ul

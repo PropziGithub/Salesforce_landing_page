@@ -113,7 +113,7 @@ export function Pricing() {
             for everyone.
           </h2>
           <p className="mt-4 text-lg text-slate-400">
-            {`it doesn't matter what size your business is, we have solutions that will work for any company.`}
+            {`It doesn't matter what size your business is, we have solutions that will work for any company.`}
           </p>
         </div>
           <div className='flex items-center justify-center'>
@@ -127,7 +127,7 @@ export function Pricing() {
             features={[
               'Minimum 10 Hours',
               'Discovery Meeting With Dedicated Project Manager',
-              'Implementation of a Single Salesforce Projec',
+              'Implementation of a Single Salesforce Project',
               'Includes Basic User Training',
             ]}
             btntext='Get started'
