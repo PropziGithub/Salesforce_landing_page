@@ -79,7 +79,7 @@ export function PrimaryFeatures() {
         unoptimized
       />
       <Container className="relative">
-        <div className='max-w-2xl xl:max-w-none'>
+        <div className=''>
            <Carousel/>
             <p className="text-center mt-6 text-lg tracking-tight text-blue-100">
             {`Salesforce doesn't have to be a pain. Let us take care of the tedious tasks for you.`}
