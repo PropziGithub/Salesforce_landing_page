@@ -22,7 +22,7 @@ const testimonials = [
     {
       content:
         `Working together has enhanced our customer communications and engagement. 
-         The Sparkforce team is knowledgeable and always willing and able to help with a fast turnaround.
+         The Spark&Spur team is knowledgeable and always willing and able to help with a fast turnaround.
          I know I can depend on them to generate quality content with seamless execution.`,
       author: {
         name: 'Leslie Provenzano',
@@ -34,7 +34,7 @@ const testimonials = [
   [
     {
       content:
-        `Extremely helpful while keeping a smile on their faces. Sparkforce helped us bring the
+        `Extremely helpful while keeping a smile on their faces. Spark&Spur helped us bring the
          Refer-a-Friend project to life. They were resourceful, answered questions, and made changes quickly.
          They are a pleasure to work with.`,
       author: {
@@ -45,7 +45,7 @@ const testimonials = [
     },
     {
       content:
-       `All you want from a strategic partner. Sparkforce has supported our consumer lending business through four years of growth.
+       `All you want from a strategic partner. Spark&Spur has supported our consumer lending business through four years of growth.
         Their team maintains and supports all aspects of our Salesforce integration with our lending platform.
         This includes all strategy implementations, daily real-time support, and process changes. 
         Varun, Neil, and Team are proactive in suggesting product development and excellent at implementing improvements.`,
