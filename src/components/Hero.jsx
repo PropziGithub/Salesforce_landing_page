@@ -59,7 +59,7 @@ export function Hero() {
         </span>
       </h1>
       <p className="mx-auto mt-4 text-xl font-[600] tracking-tight text-slate-700">
-        {`Your CRM tool is a powerful tool – ensure it's set up for success.`}
+        {`Your CRM is a powerful tool – ensure it's set up for success.`}
       </p>
       <p className="mx-auto my-4  text-lg tracking-tight text-slate-700">
         {`Maximize efficiency for marketing and operations teams:`}
