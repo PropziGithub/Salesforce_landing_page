@@ -48,30 +48,22 @@ function CheckIcon({ className }) {
   )
 }
 
-function Plan({ name, price, description, href, features, featured = false, btntext }) {
+function Plan({ name, price, description,href, features, featured = false, btntext }) {
   return (
     <section
       className={clsx(
-        'flex flex-col rounded-3xl px-6 sm:px-8 lg:w-[350px] xl:w-[350px] lg:mx-4 xl:mx-4',
+        'flex flex-col  rounded-3xl px-6 sm:px-8 w-[350px]',
         featured ? 'order-first bg-blue-600 py-8 lg:order-none' : 'lg:py-8'
       )}
     >
       <h3 className="mt-5 font-display text-lg text-white">{name}</h3>
-      <p
-        className={clsx(
-          'mt-2 text-base',
-          featured ? 'text-white' : 'text-slate-400'
-        )}
-      >
-        {description}
-      </p>
       <p className="order-first font-display text-5xl font-light tracking-tight text-white">
         {price}
       </p>
       <ul
         role="list"
         className={clsx(
-          'order-last mt-10 flex flex-col gap-y-3 text-sm',
+          'order-last mt-4 flex flex-col gap-y-3 text-sm',
           featured ? 'text-white' : 'text-slate-200'
         )}
       >
@@ -86,11 +78,19 @@ function Plan({ name, price, description, href, features, featured = false, btnt
         href={href}
         variant={featured ? 'solid' : 'outline'}
         color="white"
-        className="mt-8"
+        className="my-8"
         aria-label={`Get started with the ${name} plan for ${price}`}
       >
         {btntext}
       </Button>
+      <p
+        className={clsx(
+          'mt-2 text-base',
+          featured ? 'text-white' : 'text-slate-400'
+        )}
+      >
+        {description}
+      </p>
     </section>
   )
 }
@@ -98,53 +98,36 @@ function Plan({ name, price, description, href, features, featured = false, btnt
 export function Pricing() {
 
   return (
-    <section
-      id="pricing"
-      aria-label="Pricing"
-      className="bg-slate-900 flex flex-col justify-center"
-    >
-        <Container className='py-20 sm:py-32'>
-        <div className="md:text-center">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
-            <span className="relative whitespace-nowrap">
-              <SwirlyDoodle className="absolute top-1/2 left-0 h-[1em] w-full fill-blue-400" />
-              <span className="relative">Simple pricing,</span>
-            </span>{' '}
-            for everyone.
-          </h2>
-          <p className="mt-4 text-lg text-slate-400">
-            {`It doesn't matter what size your business is, we have solutions that will work for any company.`}
-          </p>
-        </div>
-          <div className='flex items-center justify-center'>
-          <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-2 xl:mx-0 xl:gap-x-8">
+    <section className=''>
+        <Container>
+        <div className='flex'>
+          <div className=" mt-16 flex flex-col lg:flex-row xl:flex-row md:flex-row gap-10 ">
           <Plan
             featured
-            name="Starter"
-            price="From $130/h"
-            description="Great for smaller businesses and individual projects."
+            name="Packages from $1300 (Hourly rates available from $130/hr)"
+            price="Starter"
+            description="Great for small businesses and individual projects."
             href="#"
             features={[
-              'Minimum 10 Hours',
-              'Discovery Meeting With Dedicated Project Manager',
-              'Implementation of a Single Salesforce Project',
-              'Includes Basic User Training',
+              'Centralize Contact Management',
+              'Custom Reporting Dashboards',
+              'Campaign List Clean Up',
+              'User Training and Consultation',
             ]}
             btntext='Get started'
           />
           <Plan
             featured
-            name="Enterprise"
+            name="Pricing based on scope (Hourly rates from $130/hr)"
             price="Custom"
-            description="For even the biggest enterprise companies."
+            description="Ideal for enterprise companies or larger implementation."
             href="#"
             features={[
-              'Billed By Project Scope',
-              'Discovery Meeting With Dedicated Account Manager and Technical Lead',
-              'Salesforce Optimization and Third-Party Integrations ',
-              'Weekly Project Touchpoints ',
-              'On-going Salesforce Support ',
-              'Dedicated Training Sessions With Your Team',
+              'Custom API Development',
+              'Infrastructure Re-engineering',
+              'Optimize CRM Ecosystem',
+              'Independant Audit Report',
+              'Growth Strategy Expertiset ',
             ]}
             btntext='Get quote'
           />

@@ -1,14 +1,50 @@
-import Image from 'next/future/image'
-
+import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import IconSlider from './Slider'
+import { Pricing } from './Pricing'
+
+
+
+function CheckIcon({ className }) {
+  return (
+    <svg
+      aria-hidden="true"
+      className={clsx(
+        'h-10 w-10 flex-none fill-current stroke-current',
+        className
+      )}
+    >
+      <path
+        d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
+        strokeWidth={0}
+      />
+      <circle
+        cx={12}
+        cy={12}
+        r={8.25}
+        fill="none"
+        strokeWidth={1.5}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
+
+const data = [
+  {name: 'Unlock hidden efficiencies'},
+  {name: 'Improve cross-functional workflows'},
+  {name: 'Run confident list management'},
+]
 
 
 export function Hero() {
   return (
-    <Container className="pt-16 pb-16 text-center lg:pt-16">
-      <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
+    <Container className="pt-16 pb-16 lg:pt-16">
+      <div className='items-center flex flex-col lg:flex-row gap-10'>
+        <div>
+        <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
         Salesforce{' '}
         <span className="relative whitespace-nowrap text-blue-600">
           <svg
@@ -22,12 +58,20 @@ export function Hero() {
           <span className="relative">made simple.</span>
         </span>
       </h1>
-      <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        {`Salesforce is an incredibly powerful tool, but you need a certified
-         marketing and development team to bring your vision to life.
-         Spark&Spur helps you execute on Salesforce and beyond.`}
+      <p className="mx-auto mt-4 text-xl font-[600] tracking-tight text-slate-700">
+        {`Your CRM tool is a powerful tool – ensure it's set up for success.`}
       </p>
-      <div className="mt-10 flex justify-center gap-x-6">
+      <p className="mx-auto my-4  text-lg tracking-tight text-slate-700">
+        {`Maximize efficiency for marketing and operations teams:`}
+      </p>
+      
+          {data.map((item) => (
+            <li className="flex" key={item.name}>
+            <CheckIcon/>
+              <span className="">{item.name}</span>
+          </li>
+          ))}
+      <div className="mt-12 flex gap-x-6">
         <Button href="#book-a-call">Book a Call</Button>
         <Button
           href="#testimonials"
@@ -41,6 +85,9 @@ export function Hero() {
           </svg>
           <span className="ml-3">See Testimonials</span>
         </Button>
+      </div>
+        </div>
+        <Pricing/>
       </div>
       <div className="mt-24 lg:mt-24 flex flex-col items-center justify-center">
         <p className="font-display text-base text-slate-900">
