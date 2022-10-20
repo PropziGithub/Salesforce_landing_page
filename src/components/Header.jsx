@@ -1,8 +1,10 @@
-import { Fragment } from 'react'
+import { useState,Fragment } from 'react'
 import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 
+import { TextField, TextArea } from '@/components/Fields'
+import Modal from '@/components/Modal'
 import { Container } from '@/components/Container'
 import Logo from '@/components/Logo'
 import { Button } from '@/components/Button'
@@ -62,7 +64,7 @@ function MobileNavigation() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <Popover.Overlay className="fixed inset-0 bg-slate-300/50" />
+          <Popover.Overlay className="fixed inset-0 bg-black/50" />
         </Transition.Child>
         <Transition.Child
           as={Fragment}
@@ -89,6 +91,16 @@ function MobileNavigation() {
 }
 
 export function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
   return (
     <header className="py-10">
       <Container>
@@ -108,17 +120,67 @@ export function Header() {
             <div className="hidden md:block">
               {/* <NavLink href="/login">Sign in</NavLink> */}
             </div>
-            <Button href="#book-a-call" color="blue">
+            <Button onClick={openModal} color="blue">
               <span>
               Get Quote
               </span>
             </Button>
             <div className="-mr-1 md:hidden">
-              <MobileNavigation />
+            <MobileNavigation />
             </div>
           </div>
         </nav>
       </Container>
+      <Modal
+      show={isOpen}
+      openModal={openModal}
+      closeModal={closeModal}
+      title="How Can We Help?"
+      className="z-[10000] inline-block py-6 my-8 w-[100%] max-w-[440px] overflow-hidden text-left align-top  transition-all transform bg-white shadow-xl rounded-[7px]">
+        <form
+          action="#"
+          className="mt-10 grid grid-cols-1 gap-y-8 gap-x-6 sm:grid-cols-2 px-4"
+        >
+          <TextField
+            label="Full name"
+            id="full_name"
+            name="full_name"
+            type="text"
+            autoComplete="given-name"
+            required
+          />
+          <TextField
+            label="Email"
+            id="email"
+            name="email"
+            type="email"
+            autoComplete="email"
+            required
+          />
+          <TextArea
+            className="col-span-full"
+            label="Inquiry"
+            id="inquiry"
+            name="inquiry"
+            type="text"
+            autoComplete="inquiry"
+            required
+          />
+
+           <div className="col-span-full">
+            <Button
+              type="submit"
+              variant="solid"
+              color="blue"
+              className="w-full"
+            >
+              <span>
+                Submit <span aria-hidden="true">&rarr;</span>
+              </span>
+            </Button>
+          </div>
+          </form>
+      </Modal>
     </header>
   )
 }
