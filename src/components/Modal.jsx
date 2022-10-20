@@ -55,9 +55,9 @@ const Modal = ({ show, closeModal, openModal, title, children, className}) => {
                   as="div"
                   className="flex flex-row justify-between px-4"
                 >
-                  <div className="font-[600] text-[18px] leading-[24px] text-[#222]">{title}</div>
+                  <div className="font-[600] text-[18px] leading-[24px] text-[#ffffff]">{title}</div>
                   <div className="cursor-pointer" onClick={closeModal}>
-                  <svg className="w-[30px] h-[30px] text-[#222] hover:text-blue-600"  fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" enableBackground="new 0 0 512 512" xmlSpace="preserve">
+                  <svg className="w-[30px] h-[30px] text-[#ffffff] hover:text-[#222]"  fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" enableBackground="new 0 0 512 512" xmlSpace="preserve">
                     <path d="M278.6,256l68.2-68.2c6.2-6.2,6.2-16.4,0-22.6c-6.2-6.2-16.4-6.2-22.6,0L256,233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6,0
 	                c-3.1,3.1-4.7,7.2-4.7,11.3c0,4.1,1.6,8.2,4.7,11.3l68.2,68.2l-68.2,68.2c-3.1,3.1-4.7,7.2-4.7,11.3c0,4.1,1.6,8.2,4.7,11.3
 	                c6.2,6.2,16.4,6.2,22.6,0l68.2-68.2l68.2,68.2c6.2,6.2,16.4,6.2,22.6,0c6.2-6.2,6.2-16.4,0-22.6L278.6,256z"></path>

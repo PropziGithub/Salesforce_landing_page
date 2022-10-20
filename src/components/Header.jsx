@@ -136,7 +136,7 @@ export function Header() {
       openModal={openModal}
       closeModal={closeModal}
       title="How Can We Help?"
-      className="z-[10000] inline-block py-6 my-8 w-[100%] max-w-[440px] overflow-hidden text-left align-top  transition-all transform bg-white shadow-xl rounded-[7px]">
+      className="z-[10000] inline-block bg-blue-600 py-6 my-8 w-[100%] max-w-[440px] overflow-hidden text-left align-top  transition-all transform bg-white shadow-xl rounded-[7px]">
         <form
           action="#"
           className="mt-10 grid grid-cols-1 gap-y-8 gap-x-6 sm:grid-cols-2 px-4"
@@ -171,7 +171,7 @@ export function Header() {
             <Button
               type="submit"
               variant="solid"
-              color="blue"
+              color="white"
               className="w-full"
             >
               <span>
