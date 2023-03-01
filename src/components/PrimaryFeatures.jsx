@@ -79,7 +79,7 @@ export function PrimaryFeatures() {
         unoptimized
       />
       <Container className="relative">
-        <div className=''>
+        <div className='hidden md:block'>
            <Carousel/>
             <p className="text-center mt-6 text-lg tracking-tight text-blue-100">
             {`Salesforce doesn't have to be a pain. Let us take care of the tedious tasks for you.`}
@@ -87,7 +87,7 @@ export function PrimaryFeatures() {
         </div>
         <Tab.Group
           as="div"
-          className="mt-16 grid grid-cols-1 items-center gap-y-2 pt-10 sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pt-0"
+          className="grid grid-cols-1 items-center gap-y-2  sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pt-0"
           vertical={tabOrientation === 'vertical'}
         >
           {({ selectedIndex }) => (
