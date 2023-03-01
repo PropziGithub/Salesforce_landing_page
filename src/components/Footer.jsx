@@ -10,7 +10,7 @@ export function Footer() {
       <Container>
         <div className="py-16">
           <div className='flex justify-center items-center h-10 w-auto mx-auto '>
-            <Logo className='w-auto h-56' />
+            <Logo className='w-[180px]' />
           </div>
           <nav className="mt-10 text-sm" aria-label="quick links">
             <div className="-my-1 flex justify-center gap-x-6">

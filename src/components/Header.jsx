@@ -96,7 +96,7 @@ export function Header() {
           <div className="flex items-center md:gap-x-12">
             <Link href="#" aria-label="Home">
               <div className='flex justify-center items-center h-10 w-auto'>
-              <Logo className='w-auto h-56' />
+              <Logo className='w-[180px]'/>
             </div>
             </Link>
             <div className="hidden md:flex md:gap-x-6">
